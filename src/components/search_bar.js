@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
     render() {
-        return <input onChange={this.onInputChange} />;
-    }
-
-    onInputChange(event) {
-        console.log('Typing ', event);
+        return <input onChange={(event) => console.log(event.target.value)} />;
     }
 }
 
